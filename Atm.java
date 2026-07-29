@@ -7,7 +7,7 @@ public class Atm {
 	static int balance;
 	void checkbalance()
 	{
-		balance=balance;
+		balance=deposit - withdrawal;
 		System.out.println("balance:"+balance);
 	}
 	
@@ -16,7 +16,7 @@ public class Atm {
 		Atm b1 = new Atm();
 		
 		b1.deposit=10000;
-		b1.withdrawal=-500;
+		b1.withdrawal=500;
 		
 		System.out.println("deposit:" + b1.deposit);
 		System.out.println("withdrawal:"+b1.withdrawal);
